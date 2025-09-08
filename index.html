@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+  <div class="box">
+  <h2>Register</h2>
+  <p class="text">Create an account to continue!</p>
+  </div>
+  </div>
+  
+  <div class="contain">
+    <!-- <h2>Register</h2>
+    <p class="text">Create an account to continue!</p> -->
+    <form id="form">
+    <input type="text" placeholder="Username" id="username">
+    <input type="tel" placeholder="Phone number">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    
+    <div class="alr">Have an account? <br> <a href="">Login</a></div>
+    <div class="for">Forgot password? <br> <a href="">Reset</a></div>
+    
+    <button type="submit">Register</button>
+    <div class="or">OR</div>
+    <hr style="border: 1px solid #ddd;">
+    <div class="space">Visit home page
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    const form = document.getElementById("form");
+
+form.addEventListener("submit", (e)=>  {
+e.preventDefault();
+const Username = document.getElementById("username");
+if (Username.value == "") {
+alert("Username cannot be empty");
+}
+});
+  </script>
+  
+</body>
+</html>
